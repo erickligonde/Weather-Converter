@@ -1,1 +1,36 @@
-Fahrenheit to Celsius
+// Create two variables, celsius and fahrenheit.
+// Use prompt() to ask the user whether they want to convert from Celsius to Fahrenheit or from Fahrenheit to Celsius. You can provide two options like "C to F" and "F to C."
+// If the user selects "C to F," prompt them to enter a temperature in Celsius.
+// If the user selects "F to C," prompt them to enter a temperature in Fahrenheit.
+// Perform the appropriate temperature conversion using the conversion formulas:
+// Celsius to Fahrenheit: F = (C × 9/5) + 32
+// Fahrenheit to Celsius: C = (F - 32) × 5/9
+// Display the converted temperature to the user with a descriptive message.
+
+// create two variables
+var celsius
+var fahrenheit
+let C
+let F
+// Welcome
+let welcome = alert("Hello. Welcome to the Temperature Conversion App")
+// Use prompt to ask user if they would like to convert Celsius to Fahrenheit or the opposite
+let decision = prompt("Convert from F to C or Convert from C to F") 
+if (decision == "F to C"){
+var ftoCAnswer = prompt("Enter a number: ")
+// If user selects F to C, convert the provided fahrenheit number to celsius
+  C = (ftoCAnswer - 32) * 5/9
+  C = Math.ceil(C)
+  // Display the converted number
+  document.write("It will be " + C + " degrees celsius today.")
+} else if (decision == "C to F"){
+  var ftoCAnswer = prompt("Enter a number: ")
+  // If user selects C to F, convert the provided fahrenheit number to celsius
+  F = (ftoCAnswer * 9/5) + 32
+  F = Math.ceil(F)
+  // Display the converted number
+  document.write("It will be "+ F + " degrees fahrenheit today.")
+} else{
+  alert("You must type F to C or C to F")
+}
+
